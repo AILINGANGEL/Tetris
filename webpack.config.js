@@ -41,7 +41,8 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: 'output management'
+            title: 'Tetris',
+            template: './public/index.html'
         })
     ]
 };
