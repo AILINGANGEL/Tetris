@@ -3,11 +3,82 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>output management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://cdn.bootcss.com/font-awesome/5.8.2/css/all.css" rel="stylesheet">
+    <!-- <link href="/your-path-to-fontaweso?me/css/brands.css" rel="stylesheet"> -->
+    <!-- <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet"> -->
+    <title>俄罗斯方块单机版</title>
+    <style type="text/css">
+    body {
+        margin: 0;
+    }
+
+    #game-box {
+        background-color: rgb(251, 188, 25);
+        height: calc(85vh - 105px);
+        overflow: hidden;
+    }
+
+    .controller-box {
+        border-top: 5px solid rgb(187, 187, 185);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: rgb(230, 86, 86);
+        height: 15vh;
+        padding: 0 5px;
+    }
+
+    .score {
+        background-color: rgb(67, 152, 230);
+        height: 100px;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 36px;
+        line-height: 100px;
+    }
+
+
+    .circle {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: rgb(245, 184, 25);
+        border: 2px solid black;
+    }
+
+    .circle div {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-color: rgb(135, 211, 16);
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    </style>
 </head>
 
 <body>
-    <div>ailing</div>
+    <div class="score"> Your Score </div>
+    <div id="game-box"></div>
+    <div class="controller-box">
+        <div class="circle">
+            <div class="fas fa-gamepad fa-2x"></div>
+        </div>
+        <div class="circle">
+            <div class="fas fa-arrow-left fa-2x"></div>
+        </div>
+        <div class="circle">
+            <div class="fas fa-arrow-right fa-2x"></div>
+        </div>
+        <div class="circle">
+            <div class="fas fa-arrow-down fa-2x"></div>
+        </div>
+    </div>
     <script type="text/javascript" src="/app.bundle.js"></script>
 </body>
 

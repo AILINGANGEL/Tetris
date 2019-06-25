@@ -1,3 +1,10 @@
-.red {
-    color: green;
+.right-arrow {
+    background: url('../assets/arrow.png') 3px 5px no-repeat;
+    background-size: cover;
+}
+
+.square {
+    background-color: rgb(251, 188, 25);
+    border: 1px solid rgb(244, 148, 8);
+    display: inline-block;
 }
