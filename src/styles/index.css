@@ -8,3 +8,9 @@
     border: 1px solid rgb(244, 148, 8);
     display: inline-block;
 }
+
+#board {
+    display: block;
+    /* height: calc(85vh - 105px); */
+    margin: 0 auto;
+}
